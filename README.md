@@ -5,6 +5,7 @@ A .net tool for analyzing memory consumption for compiled ELF file for ESP8266
 memanalyzer <path_to_objdump> <path_to_app_out>
 
 ## Sample output
+```
    Section|                   Description| Start (hex)|   End (hex)|Used space
 ------------------------------------------------------------------------------
       data|        Initialized Data (RAM)|    3FFE8000|    3FFE89F0|    2544
@@ -15,3 +16,4 @@ irom0_text|           Uncached Code (SPI)|    40240000|    402633EC|  144364
 Total Used RAM : 35364
 Free RAM : 46556
 Free IRam : 7492
+```
