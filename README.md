@@ -2,7 +2,9 @@
 A .net tool for analyzing memory consumption for compiled ELF file for ESP8266
 
 ## Usage
-memanalyzer <path_to_objdump> <path_to_app_out>
+memanalyzer path_to_objdump path_to_app_out
+
+Can be run under http://www.mono-project.com/
 
 ## Sample output
 ```
