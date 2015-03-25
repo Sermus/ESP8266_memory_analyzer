@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Esp8266 memory analyzer by Sermus</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Esp8266 memory analyzer</h1>
+        <p>A .net tool for analyzing mamory consumption for compiled ELF file for ESP8266</p>
+
+        <p class="view"><a href="https://github.com/Sermus/ESP8266_memory_analyzer">View the Project on GitHub <small>Sermus/ESP8266_memory_analyzer</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/Sermus/ESP8266_memory_analyzer/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Sermus/ESP8266_memory_analyzer/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Sermus/ESP8266_memory_analyzer">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="esp8266_memory_analyzer" class="anchor" href="#esp8266_memory_analyzer" aria-hidden="true"><span class="octicon octicon-link"></span></a>ESP8266_memory_analyzer</h1>
+
+<p>A .net tool for analyzing memory consumption for compiled ELF file for ESP8266</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>memanalyzer path_to_objdump path_to_app_out</p>
+
+<p>Can be run under <a href="http://www.mono-project.com/">http://www.mono-project.com/</a></p>
+
+<h2>
+<a id="sample-output" class="anchor" href="#sample-output" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sample output</h2>
+
+<pre><code>   Section|                   Description| Start (hex)|   End (hex)|Used space
+------------------------------------------------------------------------------
+      data|        Initialized Data (RAM)|    3FFE8000|    3FFE89F0|    2544
+    rodata|           ReadOnly Data (RAM)|    3FFE89F0|    3FFE8E44|    1108
+       bss|      Uninitialized Data (RAM)|    3FFE8E48|    3FFF0A28|   31712
+      text|            Cached Code (IRAM)|    40100000|    401062CE|   25294
+irom0_text|           Uncached Code (SPI)|    40240000|    402633EC|  144364
+Total Used RAM : 35364
+Free RAM : 46556
+Free IRam : 7492
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/Sermus">Sermus</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
