@@ -38,13 +38,8 @@ namespace MemAnalyzer
                 return;
             }
 
-            string objDump = args[0].Replace('/', '\\');
-            if (!File.Exists(objDump))
-            {
-                Console.WriteLine("Please ensure objdump executable is correct: {0}", objDump);
-                return;
-            }
-            string appOut = args[1].Replace('/', '\\');
+            string objDump = args[0].Replace('/', Path.DirectorySeparatorChar);
+            string appOut = args[1].Replace('/', Path.DirectorySeparatorChar);
             if (!File.Exists(appOut))
             {
                 Console.WriteLine("Please ensure app.out file location is correct: {0}", appOut);
